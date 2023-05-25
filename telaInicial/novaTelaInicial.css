@@ -1,0 +1,651 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body {
+    background-color: #161A1D;
+    padding: 0;
+    margin:  0;
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+ 
+    
+}
+
+h2{
+    border-bottom: 1px solid #A4161A;
+    font-family: 'Cinzel', serif;
+    font-size: 10px; 
+    text-align: center;
+}
+/* Texto da Logo */
+.txtLogo{
+    font-size:40px;
+    font-family: 'Quicksand', sans-serif;
+    
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.txtLogo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.txtBotoes , .txtBotoesC{
+    font-size: 20px;
+    font-family: 'Cinzel', sans-serif;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+    
+}
+
+.txtBotoes:hover,.txtBotoesC:hover{
+    font-size: 25px;
+    color:  #A4161A;
+}
+
+.txtBotoesC{
+    align-items: center;
+    
+    font-size: 25px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.textoSlogan{
+    color:white;
+    width: 90%;
+    height: 100%;
+    /* border: 1px solid #A4161A; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    animation: animate 1.5s linear infinite;
+    z-index: -1;
+}
+.piscar{
+    font-size: larger;
+    font-family: 'Quicksand', serif;
+    color:#070000;
+    animation: animate 1.5s linear infinite;
+    }
+   
+    @keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+        /* Cabeçalho */
+.cabecalho{
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    background-color: #0B090A;
+    margin-bottom: 20%;
+    background-image: linear-gradient(to bottom,#0b090a,#161a1d);
+    
+    z-index: 10;
+    
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+   
+}
+
+a{
+    color: red;
+    text-decoration: none;
+}
+/* Os containers das pontas do cabeçalho. */
+.cabecalhoBorda{
+    width: 25%;
+    /* border: 3px solid #A4161A; */
+    
+    display: flex;
+    align-items: center;
+}
+
+.cabecalhoBorda2{
+    width: 25%;
+    /* border: 3px solid #A4161A; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* O container do meio do cabeçalho */
+.cabecalhoMeio {
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+/* Os botoes do cabeçalho */
+.cabecalhoBotoes{
+    display: flex;
+    width: 25%;
+
+   
+    font-size:20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+.cabecalhoBotoes:hover + .txtBotoes{
+    color: #A4161A;
+}
+
+.flecha{
+   
+    font-size: 25px;
+    
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+   
+}
+
+.flecha:hover{color: #660708; transform: rotate(90deg);}
+
+.cabecalhoBusca{
+    height: 30%;
+    width: 100%;
+    border:solid 1px;
+    border-radius: 20px;
+    margin-right: 5%;
+    background-color: #A4161A;
+    display: flex;
+    align-items: center;
+    justify-items: right;
+}
+
+#txtBusca{
+    background-color:transparent;
+    outline: none;
+    border:none;
+
+    color: white;
+    width: 70%;
+    height: 100%;
+   
+    padding-left:10px;
+    font-size: 10px;
+}
+
+#txtBusca::placeholder{
+    color: whitesmoke;
+}
+
+
+.cabecalhoPerfil{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    
+ 
+}
+.cabecalhoPerfil:hover,.cabecalhoLupa:hover{
+    box-shadow:  0px 4px 1px 0px white;
+}
+
+.cabecalhoLupa{
+   
+    height: 50%;
+    width: 15%;
+    margin-right: 10%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 35%;
+    margin-top: 10%;
+}
+.contentMetade,.contentMetade2{
+ 
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid #660708; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 0;
+    
+    
+    position: relative;
+   
+    
+}
+
+
+
+.containerAbaPrincipal{
+    
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid #660708; */
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 9%;
+    z-index: -1;
+
+   
+}
+.containerAba,.containerAba2{
+    
+
+    width: 33%;
+    height: 40%;
+    /* border: 2px solid #660708; */
+    
+    display: flex;
+    justify-content: space-around;
+
+}
+.containerAba2{
+    right: 1%;
+    /* border: 2px solid #660708; */
+    
+    justify-content: right;
+    
+}
+
+.perfil{
+    height: 60%;
+    width: 20%;
+    
+    background-color: white;
+    transform: translate(0%,-100%);
+    position: relative;
+}
+
+#categorias,.destaques,.combos{
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(0%,-100%); 
+    position: relative;
+  
+}
+.contentAbas{
+    width: 100%;
+    height: 100%;
+    border-left: 5px solid #A4161A;
+    box-shadow:  0px 0px 4px 0px #000000;
+    background-color: white;
+   
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    
+}
+
+.contentAbas:hover{border-left: 10px solid #A4161A;}
+
+.containerSlogan{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    
+    
+    justify-content: center;
+    align-items: center;
+}
+.containerBotoes{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    /* border: 2px solid #660708; */
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    
+}
+.contentBotoes{
+    width: 35%;
+    height: 65%;
+    background-color:#A4161A;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.contentBotoes:hover{
+    cursor: pointer;
+    box-shadow:  0px 0px 4px 0px #000000;
+    background-color:#161A1D;
+    color: white;
+}
+
+.rodape{
+    width: 100%;
+    height: 5%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+.containerPlanos{
+    width: 100%;
+    height: 60%;
+
+    background-color: #0B090A;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.cabecalhoPlanos{
+    height: 20%;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(to bottom, #161A1D,#0B090A );
+}
+.contentPlanos{
+    height: 60%;
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.divFilmes{
+    height: 100%;
+    width: 20%;
+    /* border: 2px solid #660708; */
+}
+.planos{
+  
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planosTopo{
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif; 
+    color: #A4161A;
+    box-shadow: 1px 10px 5px black;
+    z-index: 2px;
+
+}
+.planosMetade{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.planosMetadeD{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.planosFundo{
+    width: 100%;
+    height: 15%;
+    
+    display: flex;
+}
+
+.planosDescricao{
+    background-color: #E5383B   ;
+    width: 100%;
+    height: 100%;
+}
+
+.quadPlanos{
+    width: 20%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+}
+
+
+
+.fundoMetade,.fundoMetade2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.fundoMetade2{
+    background-color: #E5383B;
+}
+.fundoMetade{
+    background-color: #660708;
+    display: flex;
+    align-items: center;
+    
+}
+.metadeButton{
+    width: 35%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #660708;
+    
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    transition: .4s;
+    border: #0B090A;
+    
+}
+.metadeButton:hover{
+    background-color: #A4161A;
+}
+
+
+
+.imgFilme{
+    height: 100%;
+    width: 100%;
+    
+}
+h2{
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif; 
+    border: none;
+    font-weight: lighter;
+}
+
+.icone3d{
+    position: absolute;
+  
+    
+}
+
+.containerSlides{
+    width: 98%;
+    
+    height: 98%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    z-index: 4;
+}
+
+.setaSlidesE,.setaSlidesD{
+    position: absolute;
+    font-size: 50px;
+    color : white;
+    cursor: pointer;
+   
+}
+
+.setaSlidesE:hover,.setaSlidesD:hover{
+    transform: scale(1.1);
+}
+
+.setaSlidesD {left: 95%; top: 50%}
+.setaSlidesE {left: 52%; top: 50%}
+
+.slidesCont{
+    width: 100%;
+    height: 10%;
+    
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 25%;
+}
+.slidesNum {
+    width: 5%;
+    margin: 1%;
+    height: 30%;
+    
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.2);   
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 2px solid #A4161A;
+    font-weight: lighter;
+}
+
+.slidesImgs{
+    display: flex;
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+    
+}
+
+.slidesImgs img{
+    position: relative;
+    object-fit: cover;
+}
+
+.menuPerfil{
+ 
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    backdrop-filter: blur(10px);
+    z-index: 14;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+   
+}
+.perfilSel{
+    color: white;
+    width: 12%;
+    font-weight: lighter;
+    padding-left: 1%;
+    height: 10%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+   
+    transition: 1s;
+}
+.perfilSel:hover{
+    transition: .1s;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.7) ;
+    /* border-bottom: 1px solid white; */
+    
+}
+
+
+.d2
+        {
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            animation: gira2 5s infinite alternate;
+            width: 0px;
+            height: 200px;
+            animation-delay: 0,5s;
+          
+        }
+@keyframes gira2{
+           
+            0%   {top: 100px; left: 0px; rotate: 0deg; }
+           
+            100% { top: 100px; left: 1100px; rotate: 360deg;
+                   width: 0px; height: 0px;
+                 }
+        }

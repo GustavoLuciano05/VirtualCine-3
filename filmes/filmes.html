@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Cine</title>
+    <link rel="stylesheet" href="filmes.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+ 
+    
+</head>
+<body onload="setaPos()">
+    <div class="principal">
+        <div class="cabecalho">
+            
+            <div class="caixaL"> 
+                <div class="logoTexto" onclick="voltar();">VIRTUAL CINE</div>
+            </div>
+        </div>
+
+        <div class="caixaContent">
+            <div class="caixaColunas">
+                <div class="caixaTexto">
+                   <h> Clássicos </h>
+                </div>
+
+                <div class="caixaF">
+                    <button onclick="retornarFuncao('1')" class="setaTras" id = seta1> <</button>
+                    
+                    <div id = "caixaFilmes1" class="caixaFilmes">
+                        <div class="filmes">
+                        
+                            <div class="filmesCabecalho">3D</div>
+                            <div class="divFilme">
+                            
+                             <img src="../img/filmeDial.png" class="imgFilme" onclick="telafilme('5');"> 
+                                <div class="rodapeFilme">
+                                    <div class="rodapeCabecalhoFilme"> Dial M For Murder (1954) </div>
+                                    
+                                    <div class="rodapeRodape">
+                                        <div class="icon">
+                                            <i class="bx bxs-star"></i>
+                                            <h1>8<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="bx bxs-time"></i>
+                                            <h1>107 MIN<h1>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            
+                            </div>
+                    
+                        </div>
+                        <div class="filmes">
+                        
+                            <div class="filmesCabecalho">3D</div>
+                            <div class="divFilme">
+                                <img src="../img/filmeHouseWax.png" class="imgFilme"onclick="telafilme('6');"> 
+                                <div class="rodapeFilme">
+                                    <div class = "rodapeCabecalhoFilme"> House of Wax (1953) </div>
+                                    
+                                    <div class="rodapeRodape">
+                                        <div class="icon">
+                                            <i class="bx bxs-star"></i>
+                                            <h1>8<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="bx bxs-time"></i>
+                                            <h1>107 MIN<h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                    
+                        </div>
+                        <div class="filmes">
+                        
+                            <div class="filmesCabecalho">3D</div>
+                            <div class="divFilme">
+                                <img src="../img/filmeCreatureFrom.png" class="imgFilme" onclick="telafilme('7');"> 
+                                <div class="rodapeFilme">
+                                    <div class = "rodapeCabecalhoFilme"> Creature From the Black Lagoon (1954)  </div>
+                                    
+                                    <div class="rodapeRodape">
+                                        <div class="icon">
+                                            <i class="bx bxs-star"></i>
+                                            <h1>8<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="bx bxs-time"></i>
+                                            <h1>107 MIN<h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+
+                   
+                        <div class="filmes">
+                        
+                            <div class="filmesCabecalho">3D</div>
+                            <div class="divFilme">
+                                <img src="../img/filmeFrank.png" class="imgFilme" onclick="telafilme('8');"> 
+                                <div class="rodapeFilme">
+                                    <div class = "rodapeCabecalhoFilme"> Flesh for Frankenstein (1973) </div>
+                                    
+                                    <div class="rodapeRodape">
+                                        <div class="icon">
+                                            <i class="bx bxs-star"></i>
+                                            <h1>8<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="bx bxs-time"></i>
+                                            <h1>107 MIN<h1>
+                                        </div>
+                                    </div>
+                                </div>                  
+                            </div>
+                    
+                        </div>
+                       
+                    
+                        <div class="filmes">
+                            <div class="filmesCabecalho">3D</div>
+                            <div class="divFilme">
+                                <img src="../img/filmeMagnifecentBodyguards.png" class="imgFilme "onclick="telafilme('9');"> 
+                                <div class="rodapeFilme">
+                                    <div class = "rodapeCabecalhoFilme"> Magnificent Bodyguards (1978) </div>
+                                    
+                                    <div class="rodapeRodape">
+                                        <div class="icon">
+                                            <i class="bx bxs-star"></i>
+                                            <h1>8<h1>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="bx bxs-time"></i>
+                                            <h1>107 MIN<h1>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            </div> 
+                        </div>
+                        
+                    </div>
+                    <button onclick="translacionarFuncao('1')" class="setaFrente" id = seta2> ></button>
+                   
+                </div>
+
+                <div class="caixaTexto">
+                    <h> Destaques </h>
+                 </div>
+                 <div class="caixaF">
+                    <button onclick="retornarFuncao('2')" class="setaTras" id = seta3> <</button>
+                    <div id = "caixaFilmes2" class="caixaFilmes">
+                    <div class="filmes">
+                        
+                        <div class="filmesCabecalho">3D</div>
+                        <div class="divFilme">
+                            
+                            <img src="../img/filmeGravity.png" class="imgFilme" onclick="telafilme('10');"> 
+                            <div class="rodapeFilme">
+                                <div class="rodapeCabecalhoFilme"> Gravity(2013) </div>
+                                
+                                <div class="rodapeRodape">
+                                    <div class="icon">
+                                        <i class="bx bxs-star"></i>
+                                        <h1>8<h1>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="bx bxs-time"></i>
+                                        <h1>107 MIN<h1>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                    <div class="filmes">
+                        
+                        <div class="filmesCabecalho">3D</div>
+                        <div class="divFilme">
+                            <img src="../img/filmeAvatar.png" class="imgFilme" onclick="telafilme('11');"> 
+                            <div class="rodapeFilme">
+                                <div class = "rodapeCabecalhoFilme"> Avatar (2009) </div>
+                                
+                                <div class="rodapeRodape">
+                                    <div class="icon">
+                                        <i class="bx bxs-star"></i>
+                                        <h1>8<h1>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="bx bxs-time"></i>
+                                        <h1>107 MIN<h1>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                    <div class="filmes">
+                        
+                        <div class="filmesCabecalho">3D</div>
+                        <div class="divFilme">
+                            <img src="../img/filmeTravelToCenter.png" class="imgFilme" onclick="telafilme('12');"> 
+                            <div class="rodapeFilme">
+                                <div class = "rodapeCabecalhoFilme"> Center of the Earth (2008) </div>
+                               
+                                <div class="rodapeRodape">
+                                    <div class="icon">
+                                        <i class="bx bxs-star"></i>
+                                        <h1>8<h1>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="bx bxs-time"></i>
+                                        <h1>107 MIN<h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="filmes">
+                        
+                        <div class="filmesCabecalho">3D</div>
+                        <div class="divFilme">
+                            <img src="../img/filmeGhostsOfAbyss.png" class="imgFilme" onclick="telafilme('13');"> 
+                            <div class="rodapeFilme">
+                                <div class = "rodapeCabecalhoFilme"> Ghosts Of The Abyss (2003) </div>
+                               
+                                <div class="rodapeRodape">
+                                    <div class="icon">
+                                        <i class="bx bxs-star"></i>
+                                        <h1>8<h1>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="bx bxs-time"></i>
+                                        <h1>107 MIN<h1>
+                                    </div>
+                                </div>
+                            </div>                  
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="filmes">
+                        <div class="filmesCabecalho">3D</div>
+                        <div class="divFilme">
+                            <img src="../img/filmeTheWalk.png" class="imgFilme" onclick="telafilme('14');"> 
+                            <div class="rodapeFilme">
+                                <div class = "rodapeCabecalhoFilme"> The Walk (2015) </div>
+                               
+                                <div class="rodapeRodape">
+                                    <div class="icon">
+                                        <i class="bx bxs-star"></i>
+                                        <h1>8<h1>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="bx bxs-time"></i>
+                                        <h1>107 MIN<h1>
+                                        <h1>14+<h1>   
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <button onclick="translacionarFuncao('2')" class="setaFrente" id = seta4> ></button>
+                </div>
+
+
+            </div>
+            
+        </div>
+    </div>
+       
+       
+</body>
+<script src="../jquery-3.6.4.min.js"></script>
+<script src="filmes.js"></script>
+
+</html>

@@ -1,0 +1,429 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+
+@keyframes rodapeImagemAnim {
+    0%{height: 0%;}
+    100%{height: 100px;}
+}
+
+@keyframes zoom {
+    0%{z-index: 1;}
+
+    100%{z-index:2;clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);}
+}
+body{
+    padding : 0;
+    margin : 0;
+    background-color: #161A1D;
+}
+
+.principal{
+    background-color: #161A1D;
+    width: 100%;
+    height: 200vh;
+    
+}
+.cabecalho {
+    width: 100%;
+    height: 10%;
+    background-color: #0B090A;
+    border-bottom: 5px solid white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.cabecalhoBorda{
+    width: 25%;
+    height: 100%;
+    /* border: 3px solid #A4161A; */
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+.cabecalhoBorda2{
+    width: 25%;
+    height: 100%;
+    /* border: 3px solid #A4161A; */
+
+    display: flex;
+    align-items: center;
+}
+
+.cabecalhoMeio{
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.txtLogo{
+    
+    font-family: 'Quicksand', sans-serif;
+    
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.txtLogo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.divDivisoria{
+    width: 100%;
+    height: 15%;
+    background-color: #161A1D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.divDivisoriaMetade,.divDivisoriaMetade2{
+    width: 75%;
+    height: 30%;
+   
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.divDivisoriaMetade2{
+    
+    background-color: rgba(255, 255, 255, .95);
+    height: 50%;
+    font-family: 'Quattrocento', serif;
+    font-size: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 30px 5px black;
+
+    font-weight: lighter;
+    align-items: center;
+}
+
+
+.botoesDivDivisoria{
+    width: 25%;
+    height: 55%;
+    
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 1%;
+    
+
+    margin-bottom: 2.5%;
+    font-family: 'Quattrocento', serif;
+   
+    font-size: 20px;
+    cursor:pointer;
+    transition: .1s;
+    text-shadow: 1px 1px 3px #0B090A;
+    border-bottom: 5px solid white ; 
+    
+}
+
+.botoesDivDivisoria img{
+    
+    padding: 4%;
+    
+}
+
+.botoesDivDivisoria:hover{
+    border-bottom: 10px solid white ; 
+    
+}
+
+.fundoGradiente{
+    background-color: #A4161A;
+    
+    width: 100%;
+    height: 750px;
+    background-image: linear-gradient(to bottom,#E5383B , #A4161A,#660708);
+    display: flex;
+    justify-content: center;
+ 
+}
+.metadeGradiente{
+    color:white;
+    width: 55%;
+    font-size: 70px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+    
+    
+}
+
+.metadeGradienteRodape{
+    
+    
+   
+    padding: 1%;
+    margin-bottom: 1%;
+    height: 15%;
+    
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    background-color: white;
+    border-bottom: 10px solid #E5383B;
+    
+}
+.metadeGradienteRodapeTexto,.metadeGradienteRodapeTexto2{
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    color: black;
+ 
+    margin-left: 5%;
+    font-size: 80px;
+    
+}
+.metadeGradienteRodapeTexto2{
+    
+    font-size: 20PX;
+}
+
+.metadeGradienteMetade{
+    height: 100%;
+    width: 50%;
+   
+    display: flex;
+    overflow: hidden;
+}
+
+.gradienteTitulo{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-family: 'Quattrocento', serif;
+    text-transform: 5px;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.7), transparent);
+    backdrop-filter: blur(4px);
+    font-size: 120px;
+    height: 20%;
+    width: inherit;
+
+    align-items: center;
+}
+.gradienteDescricao{
+    display: flex;
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    border-bottom: 2px solid white;
+}
+.metadeGradiente2{
+    width :45%;
+   
+    
+    height: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items: center;
+    color:whitesmoke;
+    font-size: 100px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.divCarrinho{
+    width: 70%;
+    position: relative;
+    height: 90%;
+    background-color: whitesmoke;
+    z-index: 2;
+}
+
+.divCarrinhoBotao{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    border-bottom: 5px solid #A4161A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrinho{
+    width: 12.5%;
+    height: 65%;
+    background-color: white;
+}
+
+
+.rodape {
+    width:100%;
+    height: 75px;
+    position: fixed;
+    
+    
+    background-color: #A4161A;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:whitesmoke;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 2;
+}
+.rodape:hover{
+    height: 90px;
+    
+}
+
+.containerImagens{
+    width: 100%;
+    height: 300px;
+    opacity: 0%;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fundoImagens{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0px 10px 20px 5px black;
+
+}
+
+.cabecalhoImagens{
+    width: 400px;
+    height: 75px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+   
+    color: #660708
+}
+.descricaoImagens{
+    width: 400px;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Quicksand', sans-serif;
+    
+    color: #660708;
+    
+}
+
+.divDiagonal{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    clip-path: polygon(0% 0, 100% 0%, 0% 100%, 0 100%);
+    position: absolute;
+    display: flex;
+    transition: 2s;
+}
+.divDiagonal img,.divDiagonalInv img{
+    display: block;
+    transition: 2s;
+}
+
+.divDiagonalInv{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+    transition: 2s;
+    
+}
+.divDiagonalInv:hover img{
+    transform: scale(1.2); 
+   
+}
+.divDiagonal:hover img {
+    transform: scale(1.2);
+    
+}
+.divDiagonalInv:hover,.divDiagonal:hover{
+    z-index: 1;
+    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+}
+h{
+    border-bottom: 2px solid #A4161A;
+}
+h2{
+    font-weight: lighter;
+    font-size: 24px;
+    
+}
+
+.rodapeImage{
+    width: 400px;
+    height: 50px;
+    background-color: #660708 ;
+
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   
+
+}
+.rodapePreco{
+    width: 400px;
+    height: 100px;
+    background-color: white ;
+ 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color:#660708 ;
+    font-size: 30px;
+    display: none;
+    animation-name: rodapeImagemAnim;
+    
+    transition: 1s;
+    animation-duration: 1s;
+}
+.rodapeImage:hover + .rodapePreco{
+    display: flex;
+    
+}

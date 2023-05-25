@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="novaTelaInicial.css">
+    <title>Virtual Cine</title>
+</head>
+<body onload="VerificaBotoes()">
+    <div class="menuPerfil" id="menuPerfil" >
+        <div class="perfilSel">Configurações</div>
+        <div class="perfilSel">Histórico</div>
+        <div class="perfilSel">Conta</div>
+        <div class="perfilSel">Fale Conosco</div>
+        <div class="perfilSel" onclick="FecharPerfil()">Sair</div>
+    </div>
+    
+
+    <div class="cabecalho" id="cabe">
+        
+        <div class="cabecalhoBorda" onclick="abrirTela('telaInicial','novaTelaInicial.html');">
+            <div class="txtLogo">VIRTUAL CINE</div>
+        </div>
+        
+        <div class="cabecalhoMeio">
+            <!-- Categorias -->
+            <div class="cabecalhoBotoes" ><div class="txtBotoes"><div onclick="abrirTela('filmes','filmes.html');">CATEGORIAS</div></div></div>
+            <div class="flecha" id = "flecha" onclick="mostrarMenu('categorias','100%');">></div>
+            <!-- Destaques -->
+            <div class="cabecalhoBotoes" ><div class="txtBotoes">DESTAQUES</div></div>
+            <div class="flecha" id = "flecha" onclick="mostrarMenu('destaques','100%');">></div>
+            <!-- Combos -->
+            <div class="cabecalhoBotoes"><div class="txtBotoes"><div onclick="abrirTela('combos','combos.html');" >COMBOS</div></div></div>
+            <div class="flecha" id = "flecha" onclick="mostrarMenu('combos','100%');">></div>
+        </div>
+
+        
+        <div class="cabecalhoBorda2" >
+            <div class="cabecalhoBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                
+            </div>
+            <div class="cabecalhoLupa">
+                <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar"/>
+            </div>
+            <a href="#" onclick="MostrarPerfil();"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
+        </div>
+        <div class="containerAbaPrincipal">
+            <div class="containerAba">
+                <!-- Categorias -->
+                <div class="categorias" id="categorias">
+                    
+                    <div class="contentAbas">Aventura </div>
+                    <div class="contentAbas">Terror</div>
+                    <div class="contentAbas">Ação</div>
+                    <div class="contentAbas">Romance</div>
+                    <div class="contentAbas">Comédia</div>               
+                </div>
+                <!-- Destaques -->
+                <div class="destaques"id="destaques">
+                    <div class="contentAbas">Gato de Botas 2</div>
+                    <div class="contentAbas">Mad Max</div>
+                    <div class="contentAbas">Enrolados</div>
+                    <div class="contentAbas">Titanic </div>
+                    <div class="contentAbas">Harry Potter</div> 
+                </div>
+                <!-- Combos -->
+                <div class="combos"id="combos">
+                    <div class="contentAbas">Burguer e CocaCola</div>
+                    <div class="contentAbas">Pastel e caldo de cana</div>
+                    <div class="contentAbas">Tacos e churros</div>
+                    <div class="contentAbas">Hot Dog e suco</div>
+                    <div class="contentAbas">Pizza e Vinho </div> 
+                </div>
+            </div>
+           
+        </div>
+
+       
+    </div>
+
+    
+    <div class="content">
+        <div class="contentMetade">
+            <div class="containerSlogan">
+                <div class="textoSlogan">Um novo jeito de assistir em casa.</div>
+            </div>
+            <div class="containerBotoes">
+                <div class="contentBotoes"onclick ="abrirTela('login','login.html');" id="entrar"><div class= "txtBotoesC">Entrar</div></div>
+                <div class="contentBotoes"onclick ="abrirTela('cadastro','cadastro.html');" id="cadastro"><div class= "txtBotoesC">Cadastrar-se</div></div>
+                <div class="contentBotoes"onclick ="abrirTela('assinatura','assinatura.html');" id="assinar"><div class= "txtBotoesC">Assinar</div></div>
+            </div>
+        </div>
+        <div class="contentMetade2">
+            <div class="containerSlides">
+               
+                
+                    <div class="slidesImgs" id="slides">
+                        <img src="../img/Virtual Cine.png" height="105%">
+                        <img src="../img/Virtual Cine 2.png" height="105%">
+                        <img src="../img/Virtual Cine 3.png" height="105%">
+                    </div>
+                
+                <div class="slidesCont" id="slidesCont">
+                    <div class="slidesNum"></div>
+                    <div class="slidesNum"></div>
+                    <div class="slidesNum"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="containerPlanos">
+            <div class="cabecalhoPlanos">
+                <h1>PLANOS</h1>
+            </div>
+            <div class="contentPlanos">
+                <div class="planos">
+                    <div class="planosTopo">
+                        2D
+                    </div>
+                    
+                    <div class="planosMetade">
+                        <div class="planosMetadeD">
+                            <div class="quadPlanos"></div>
+                            <div class="quadPlanos"></div>
+                            <div class="quadPlanos"></div>
+                            <div class="quadPlanos"></div>
+                        </div>
+                        <div class="planosMetadeD">
+                            <div class="planosDescricao"></div>
+                        </div>
+                    </div>
+                    <div class="planosFundo">
+                        <div class="fundoMetade">
+                            <div class="metadeButton">1</div>
+                            <div class="metadeButton">2</div>
+                            <div class="metadeButton">4</div>
+
+                        </div>
+                        <div class="fundoMetade2">
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="planos">
+                    <div class="planosTopo">
+                        3D
+                    </div>
+                    
+                    <div class="planosMetade">
+                        <div class="planosMetadeD">
+                            <div class="quadPlanos"></div>
+                            <div class="quadPlanos"></div>
+                            <div class="quadPlanos"></div>
+                            <div class="quadPlanos"></div>
+                        </div>
+                        <div class="planosMetadeD">
+                            <div class="planosDescricao"></div>
+                        </div>
+                    </div>
+                    <div class="planosFundo">
+                        <div class="fundoMetade">
+                            <div class="metadeButton">1</div>
+                            <div class="metadeButton">2</div>
+                            <div class="metadeButton">4</div>
+                        </div>
+                        <div class="fundoMetade2"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>   
+        </div>
+    <div class="d2"><img src="../img/desconto.png" width="200px"></div> 
+</body>
+    <script src="../jquery-3.6.4.min.js"></script>
+    <script src="novaTelaInicial.js"> </script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Logos das Redes Socias -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+    
+</head>
+<script language="JavaScript" src="login.js"></script>
+<body>
+    <!-- Caixa de fundo -->
+    <div class="caixa-principal">
+        <div id="login">
+            <form class="card">
+                <div class="card-header">
+                    <h2>ENTRE</h2>
+                </div>
+                <div class="card-content">
+                    <div class="card-content-area">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" autocomplete="off">
+                    </div>
+                    <div class="card-content-area">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" autocomplete="off">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+                    <input type="submit" value="Entrar" class="submit" onclick="Login()">
+                    <br>
+                    <a href="javascript:window.history.go(-1)" class="voltar">VOLTAR</a>
+                </div>
+            </form>
+        </div>
+    </form>
+    <!-- Container, dos login pelas redes socias.-->
+    <div class="social-container">
+      <p>Ou entre pelas suas redes sociais</p>
+        <!-- Botão do Facebook -->
+      <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjc5NDgyMjY3LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"
+        target="_blank">
+        <i class="fa fa-facebook-f"></i>
+      </a>
+      
+      <a href="https://www.linkedin.com/login/pt?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2Flogin-innovation&fromSignIn=true&trk=organization_guest_nav-header-signin"
+        target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+
+      <a href="https://accounts.google.com/v3/signin/identifier?dsh=S856183839%3A1681393709832952&hl=pt-BR&ifkv=AQMjQ7Qzu1RI3oVfK7q4_w2QdyLsXVlZj1UoGRLAyH7MrRIsZO_3Pfvj38INGrh8crNnzn0WjNJm7w&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+        target="_blank">
+        <i class="fa fa-google"></i>
+      </a>
+
+    </div>
+    <div id="registrar-container">
+      <p>Ainda não tem uma conta?</p>
+      <br>
+      <a href="../cadastro/cadastro.html">Registrar</a>
+    </div>
+   
+</body>
+
+      
+</script>
+</html>
