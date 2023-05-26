@@ -69,11 +69,15 @@
                 <form class="form">
                     <input class="Emailcaixa" type="email" name="email" id="usuario" autocomplete="off"
                         placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+                        
+                        <div id="mensagemErroEmail" style="color: red;"></div>
                     <div class="container">
                         <div class="telefone" id="telefone">
 
                             <input class="caixa_telefone" id="dddPais" type="text" autocomplete="off"
                                 placeholder="Digite seu telefone">
+                                <div class="spanTel" id="mensagemErroTelefone" style="color: red;"></div>
+
                 </form>
 
 
@@ -131,14 +135,13 @@
         </div>
 
         <div class="caixabranca" id="caixabranca">
-            <input class="caixabranca" type="text" id="usuario3" autocomplete="off">
         </div>
 
     </div>
 
     <div class="card-footer">
         <input href="../inserir_cód_sms/inserir_cód_sms.html" type="submit" value="Enviar" class="submit"
-            onclick="validarTelefone()">
+            onclick="validarFormulario();">
         <br>
         <a href="javascript:window.history.go(-1)" class="voltar">VOLTAR</a>
     </div>
